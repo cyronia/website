@@ -18,6 +18,15 @@
     <meta property="og:site_name" content="cyronia">
     <meta property="og:title" content="home">
     <script src="https://use.fontawesome.com/releases/v6.2.0/js/all.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        const music = new Audio(
+            "https://cdn.glitch.global/5ea635f3-dfe1-4225-b052-ad28aa4bb2f3/Space%201990.mp3"
+        );
+        music.loop = true;
+        document.addEventListener("click", () => {
+            music.play();
+        });
+    </script>
     <title>home — cyronia</title>
 </head>
 
@@ -58,12 +67,6 @@
                     class="fab fa-twitter"></i></a>
         </div>
     </div>
-    <audio autoplay loop>
-        <source src="https://cdn.glitch.global/5ea635f3-dfe1-4225-b052-ad28aa4bb2f3/Space%201990.ogg"
-            type="audio/ogg" />
-        <source src="https://cdn.glitch.global/5ea635f3-dfe1-4225-b052-ad28aa4bb2f3/Space%201990.mp3"
-            type="audio/mpeg" />
-    </audio>
     <script src="/__/firebase/8.3.3/firebase-app.js"></script>
     <script src="/__/firebase/8.3.3/firebase-analytics.js"></script>
     <script src="/__/firebase/init.js"></script>
